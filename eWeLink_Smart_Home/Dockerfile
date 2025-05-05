@@ -3,7 +3,6 @@
 
 FROM node:14-slim
 ENV CK_API_ENV=prod
-RUN apt-get install -y python-is-python3 build-essential
 RUN mkdir -p /workspace/node_modules
 COPY ["./dist", "./package.json", "/workspace/"]
 WORKDIR /workspace
